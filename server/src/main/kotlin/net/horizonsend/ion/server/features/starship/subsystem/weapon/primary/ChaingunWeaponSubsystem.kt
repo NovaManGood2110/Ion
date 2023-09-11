@@ -36,7 +36,7 @@ class ChaingunWeaponSubsystem(starship: ActiveStarship, pos: Vec3i, face: BlockF
 	) {
 		if (starship.initialBlockCount > 500) {
 			shooter.userError("You can't fire Chainguns on a ship larger than 500 blocks!")
-			return
+			return}
 		ChaingunProjectile(starship, loc, dir, shooter).fire()
 	}
 }
