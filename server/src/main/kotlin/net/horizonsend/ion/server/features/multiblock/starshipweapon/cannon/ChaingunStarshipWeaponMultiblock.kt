@@ -10,13 +10,13 @@ import org.bukkit.block.BlockFace
 object ChaingunStarshipWeaponMultiblock : SignlessStarshipWeaponMultiblock<ChaingunWeaponSubsystem>() {
 	override fun createSubsystem(starship: ActiveStarship, pos: Vec3i, face: BlockFace): ChaingunWeaponSubsystem {
 		return ChaingunWeaponSubsystem(starship, pos, face)
-}
+	}
 
-    override fun MultiblockShape.buildStructure() {
-        at(+0, +0, +0).iron_block()
+   override fun MultiblockShape.buildStructure() {
+        at(+0, +0, +0).ironBlock()
         at(+0, +0, +1).sponge()
-        at(+0, +0, +2).grindstone()
-        at(+0, +0, +3).end_rod()
-        at(+0, +0, +4).end_rod()
+        at(+0, +0, +2).type(Material.GRINDSTONE)
+        at(+0, +0, +3).endRod()
+        at(+0, +0, +4).endRod()
     }
 }
