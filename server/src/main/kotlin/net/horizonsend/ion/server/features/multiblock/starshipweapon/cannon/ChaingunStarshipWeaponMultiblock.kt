@@ -7,7 +7,7 @@ import net.horizonsend.ion.server.features.starship.subsystem.weapon.primary.Cha
 import net.horizonsend.ion.server.miscellaneous.utils.Vec3i
 import org.bukkit.block.BlockFace
 
-object ChaingunStarshipWeaponMultiblock : SignlessStarshipWeaponMultiblock<PlasmaCannonWeaponSubsystem>() {
+object ChaingunStarshipWeaponMultiblock : SignlessStarshipWeaponMultiblock<ChaingunWeaponSubsystem>() {
 	override fun createSubsystem(starship: ActiveStarship, pos: Vec3i, face: BlockFace): ChaingunWeaponSubsystem {
 		return ChaingunWeaponSubsystem(starship, pos, face)
 }
