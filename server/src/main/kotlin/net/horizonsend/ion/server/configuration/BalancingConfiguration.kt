@@ -268,6 +268,27 @@ data class BalancingConfiguration(
 			fowardOnly = true,
 			maxPerShot = 2
 		),
+		val Chaingun: StarshipWeapon = StarshipWeapon(
+			range = 160.0,
+			speed = 500.0,
+			shieldDamageMultiplier = 3,
+			thickness = 0.3,
+			particleThickness = .5,
+			explosionPower = 4.0f,
+			volume = 10,
+			pitch = 1.5f,
+			soundName = "starship.weapon.plasma_cannon.shoot",
+			powerUsage = 1400,
+			length = 5,
+			angleRadians = 20.0,
+			convergeDistance = 10.0,
+			extraDistance = 1,
+			fireCooldownNanos = 250, // not overriden for Plasma Cannons
+			boostChargeNanos = 0,
+			aimDistance = 0,
+			fowardOnly = true,
+			maxPerShot = 2
+		),
 		val laserCannon: StarshipWeapon = StarshipWeapon(
 			range = 200.0,
 			speed = 250.0,
@@ -367,8 +388,8 @@ data class BalancingConfiguration(
 			aimDistance = 0
 		),
 		val protonTorpedo: StarshipWeapon = StarshipWeapon(
-			range = 100.0,
-			speed = 70.0,
+			range = 160.0,
+			speed = 80.0,
 			shieldDamageMultiplier = 2,
 			thickness = 0.4,
 			particleThickness = 1.0,
