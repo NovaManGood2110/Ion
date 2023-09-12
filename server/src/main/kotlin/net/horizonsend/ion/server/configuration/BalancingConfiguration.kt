@@ -271,7 +271,7 @@ data class BalancingConfiguration(
 		val Chaingun: StarshipWeapon = StarshipWeapon(
 			range = 160.0,
 			speed = 500.0,
-			shieldDamageMultiplier = 4,
+			shieldDamageMultiplier = 5,
 			thickness = 0.3,
 			particleThickness = .5,
 			explosionPower = 4.0f,
@@ -390,7 +390,7 @@ data class BalancingConfiguration(
 		val protonTorpedo: StarshipWeapon = StarshipWeapon(
 			range = 160.0,
 			speed = 80.0,
-			shieldDamageMultiplier = 2,
+			shieldDamageMultiplier = 3,
 			thickness = 0.4,
 			particleThickness = 1.0,
 			explosionPower = 7.0f,
