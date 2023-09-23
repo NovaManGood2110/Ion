@@ -43,8 +43,10 @@ abstract class ShieldSubsystem(
 	val powerRatio: Double get() = power.toDouble() / maxPower.toDouble()
 
     	fun getPowerUsage(power: Double): Int {
-       	 return (power * 3000.0).toInt()
-    	}
+	if (starship.initialBlockCount < 500)
+	return (power * 3000.0).toInt()
+ 	else return (power * 1500.0).toInt()
+	}
 
 	abstract fun containsBlock(block: Block): Boolean
 }
