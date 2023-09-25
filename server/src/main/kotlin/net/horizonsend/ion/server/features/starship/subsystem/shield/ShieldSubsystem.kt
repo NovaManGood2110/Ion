@@ -21,7 +21,7 @@ abstract class ShieldSubsystem(
 	    val maxPower: Int = (starship.initialBlockCount.coerceAtLeast(500).d().pow(3.0 / 5.0) * 10000.0).roundToInt()
 	        get() = if (starship.shields.size > maxShields) {
 	            ((maxShields / starship.shields.size) * field).toInt()
-	        } else if (starship.initialBlockCount <= 500) {
+	        } else if (starship.initialBlockCount <= 1000) {
 	             (field/2)
 	        } else if (starship.type.eventship) {
 	            (field * 2)
@@ -43,7 +43,7 @@ abstract class ShieldSubsystem(
 	val powerRatio: Double get() = power.toDouble() / maxPower.toDouble()
 
     	fun getPowerUsage(power: Double): Int {
-		return if (starship.initialBlockCount < 500)
+		return if (starship.initialBlockCount < 1000)
 		 (power * 3000.0).toInt()
  		else (power * 1500.0).toInt()
 	}
