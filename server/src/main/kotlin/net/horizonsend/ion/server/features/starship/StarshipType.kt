@@ -65,9 +65,26 @@ enum class StarshipType(
 		color = "#ff8000",
 		overridePermission = "ion.ships.override.1"
 	),
+	STARBOMBER(
+		displayName = "Starbomber",
+		minSize = 500,
+		maxSize = 1000,
+		minLevel = 1,
+		containerPercent = 0.025,
+		concretePercent = 0.15,
+		crateLimitMultiplier = 0.5,
+		sneakFlyAccelDistance = 4,
+		maxSneakFlyAccel = 4,
+		interdictionRange = 800,
+		hyperspaceRangeMultiplier = 1.5,
+		menuItemMaterial = Material.COPPER_INGOT,
+		isWarship = true,
+		color = "#ff5400",
+		overridePermission = "ion.ships.override.1"
+	),
 	GUNSHIP(
 		displayName = "Gunship",
-		minSize = 500,
+		minSize = 1000,
 		maxSize = 2000,
 		minLevel = 10,
 		containerPercent = 0.025,
