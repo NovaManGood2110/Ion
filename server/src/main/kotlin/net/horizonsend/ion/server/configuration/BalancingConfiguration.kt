@@ -268,7 +268,7 @@ data class BalancingConfiguration(
 			fowardOnly = true,
 			maxPerShot = 2
 		),
-		val Chaingun: StarshipWeapon = StarshipWeapon(
+		val chaingun: StarshipWeapon = StarshipWeapon(
 			range = 160.0,
 			speed = 500.0,
 			shieldDamageMultiplier = 6,

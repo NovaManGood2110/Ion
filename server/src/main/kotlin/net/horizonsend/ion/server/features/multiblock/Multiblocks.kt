@@ -70,11 +70,7 @@ import net.horizonsend.ion.server.features.multiblock.printer.CarbonPrinterMulti
 import net.horizonsend.ion.server.features.multiblock.printer.CarbonProcessorMultiblock
 import net.horizonsend.ion.server.features.multiblock.printer.GlassPrinterMultiblock
 import net.horizonsend.ion.server.features.multiblock.printer.TechnicalPrinterMultiblock
-import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.LaserCannonStarshipWeaponMultiblock
-import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.MiniPhaserStarshipWeaponMultiblock
-import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.PlasmaCannonStarshipWeaponMultiblock
-import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.PulseCannonStarshipWeaponMultiblock
-import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.SonicMissileWeaponMultiblock
+import net.horizonsend.ion.server.features.multiblock.starshipweapon.cannon.*
 import net.horizonsend.ion.server.features.multiblock.starshipweapon.heavy.DownwardRocketStarshipWeaponMultiblock
 import net.horizonsend.ion.server.features.multiblock.starshipweapon.heavy.HeavyLaserStarshipWeaponMultiblock
 import net.horizonsend.ion.server.features.multiblock.starshipweapon.heavy.HorizontalRocketStarshipWeaponMultiblock
@@ -209,6 +205,7 @@ object Multiblocks : IonServerComponent() {
 			MiningLaserMultiblockTier2Bottom,
 			MiningLaserMultiblockTier3Top,
 			MiningLaserMultiblockTier3Bottom,
+			ChaingunStarshipWeaponMultiblock,
 
 			ItemSplitterMultiblock,
 			GasCollectorMultiblock,
