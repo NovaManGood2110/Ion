@@ -292,7 +292,7 @@ object StarshipShields : IonServerComponent() {
 		}
 
 		val percent = shield.powerRatio
-		if (percent < 0.01) {
+		if (percent < 0.05) {
 			return false
 		}
 
