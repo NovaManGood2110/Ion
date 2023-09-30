@@ -396,7 +396,7 @@ data class BalancingConfiguration(
 			explosionPower = 7.0f,
 			volume = 10,
 			pitch = 0.75f,
-			soundName = "entity.firework_rocket.large_blast_far",
+			soundName = "starship.weapon.rocket.shoot",
 			powerUsage = 10000,
 			length = 3,
 			angleRadians = 10.0,
