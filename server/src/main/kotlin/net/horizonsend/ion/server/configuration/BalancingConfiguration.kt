@@ -269,7 +269,7 @@ data class BalancingConfiguration(
 			maxPerShot = 2
 		),
 		val chaingun: StarshipWeapon = StarshipWeapon(
-			range = 160.0,
+			range = 180.0,
 			speed = 500.0,
 			shieldDamageMultiplier = 6,
 			thickness = 0.3,
@@ -280,7 +280,7 @@ data class BalancingConfiguration(
 			soundName = "item.totem.use",
 			powerUsage = 2500,
 			length = 5,
-			angleRadians = 20.0,
+			angleRadians = 25.0,
 			convergeDistance = 10.0,
 			extraDistance = 1,
 			fireCooldownNanos = 150, // not overriden for Plasma Cannons
@@ -388,7 +388,7 @@ data class BalancingConfiguration(
 			aimDistance = 0
 		),
 		val protonTorpedo: StarshipWeapon = StarshipWeapon(
-			range = 160.0,
+			range = 180.0,
 			speed = 80.0,
 			shieldDamageMultiplier = 3,
 			thickness = 0.4,
