@@ -44,7 +44,7 @@ abstract class ShieldSubsystem(
 
     fun getPowerUsage(power: Double): Int {
         return if (starship.initialBlockCount < 1000)
-            (power * 6000.0).toInt()
+            (power * 7000.0).toInt()
         else (power * 3000.0).toInt()
     }
 
