@@ -250,7 +250,7 @@ data class BalancingConfiguration(
 		val plasmaCannon: StarshipWeapon = StarshipWeapon(
 			range = 160.0,
 			speed = 400.0,
-			shieldDamageMultiplier = 3.5,
+			shieldDamageMultiplier = 3,
 			thickness = 0.3,
 			particleThickness = .5,
 			explosionPower = 4.0f,
