@@ -15,14 +15,14 @@ class IonCannonProjectile(
 	dir: Vector,
 	shooter: Controller?
 ) : LaserProjectile(starship, loc, dir, shooter) {
-	override val range: Double = IonServer.balancing.starshipWeapons.IonCannon.range
-	override val speed: Double = IonServer.balancing.starshipWeapons.IonCannon.speed
-	override val shieldDamageMultiplier: Int = IonServer.balancing.starshipWeapons.IonCannon.shieldDamageMultiplier
+	override val range: Double = IonServer.balancing.starshipWeapons.ioncannon.range
+	override val speed: Double = IonServer.balancing.starshipWeapons.ioncannon.speed
+	override val shieldDamageMultiplier: Int = IonServer.balancing.starshipWeapons.ioncannon.shieldDamageMultiplier
 	override val color: Color
 		get() = if (starship!!.rainbowToggle) gayColors.random() else starship.weaponColor
-	override val thickness: Double = IonServer.balancing.starshipWeapons.IonCannon.thickness
-	override val particleThickness: Double = IonServer.balancing.starshipWeapons.IonCannon.particleThickness
-	override val explosionPower: Float = IonServer.balancing.starshipWeapons.IonCannon.explosionPower
-	override val volume: Int = IonServer.balancing.starshipWeapons.IonCannon.volume
-	override val soundName: String = IonServer.balancing.starshipWeapons.IonCannon.soundName
+	override val thickness: Double = IonServer.balancing.starshipWeapons.ioncannon.thickness
+	override val particleThickness: Double = IonServer.balancing.starshipWeapons.ioncannon.particleThickness
+	override val explosionPower: Float = IonServer.balancing.starshipWeapons.ioncannon.explosionPower
+	override val volume: Int = IonServer.balancing.starshipWeapons.ioncannon.volume
+	override val soundName: String = IonServer.balancing.starshipWeapons.ioncannon.soundName
 }
