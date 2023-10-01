@@ -304,7 +304,7 @@ data class BalancingConfiguration(
 			angleRadians = 15.0,
 			convergeDistance = 10.0,
 			extraDistance = 1,
-			fireCooldownNanos = 150, // not overriden for Plasma Cannons
+			fireCooldownNanos = 1500, // not overriden for Plasma Cannons
 			boostChargeNanos = 0,
 			aimDistance = 0,
 			fowardOnly = true,
