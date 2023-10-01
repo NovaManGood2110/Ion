@@ -289,6 +289,27 @@ data class BalancingConfiguration(
 			fowardOnly = true,
 			maxPerShot = 2
 		),
+		val ioncannon: StarshipWeapon = StarshipWeapon(
+			range = 100.0,
+			speed = 20.0,
+			shieldDamageMultiplier = 6,
+			thickness = 0.5,
+			particleThickness = .8,
+			explosionPower = 6.0f,
+			volume = 15,
+			pitch = 1f,
+			soundName = "entity.warden.sonic_boom",
+			powerUsage = 15000,
+			length = 4,
+			angleRadians = 15.0,
+			convergeDistance = 10.0,
+			extraDistance = 1,
+			fireCooldownNanos = 150, // not overriden for Plasma Cannons
+			boostChargeNanos = 0,
+			aimDistance = 0,
+			fowardOnly = true,
+			maxPerShot = 1
+		),
 		val laserCannon: StarshipWeapon = StarshipWeapon(
 			range = 200.0,
 			speed = 250.0,
