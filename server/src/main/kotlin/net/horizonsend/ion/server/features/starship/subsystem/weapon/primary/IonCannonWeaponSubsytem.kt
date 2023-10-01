@@ -35,8 +35,8 @@ class IonCannonWeaponSubsystem(starship: ActiveStarship, pos: Vec3i, face: Block
         shooter: Controller,
         target: Vector?
     ) {
-        if (starship.initialBlockCount > 500) {
-            shooter.userError("You can't fire IonCannons on a ship larger than 500 blocks!")
+        if (starship.initialBlockCount > 1000,) {
+            shooter.userError("You can't fire IonCannons on a ship larger than 1000 blocks!")
             return
         }
         IonCannonProjectile(starship, loc, dir, shooter).fire()
