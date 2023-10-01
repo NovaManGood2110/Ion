@@ -292,10 +292,10 @@ data class BalancingConfiguration(
 		val ioncannon: StarshipWeapon = StarshipWeapon(
 			range = 100.0,
 			speed = 20.0,
-			shieldDamageMultiplier = 6,
+			shieldDamageMultiplier = 5,
 			thickness = 0.5,
-			particleThickness = .8,
-			explosionPower = 6.0f,
+			particleThickness = 1,
+			explosionPower = 8f,
 			volume = 15,
 			pitch = 1f,
 			soundName = "entity.warden.sonic_boom",
