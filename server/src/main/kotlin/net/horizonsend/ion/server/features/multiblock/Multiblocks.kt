@@ -206,6 +206,7 @@ object Multiblocks : IonServerComponent() {
 			MiningLaserMultiblockTier3Top,
 			MiningLaserMultiblockTier3Bottom,
 			ChaingunStarshipWeaponMultiblock,
+			IonCannonStarshipWeaponMultiblock,
 
 			ItemSplitterMultiblock,
 			GasCollectorMultiblock,
