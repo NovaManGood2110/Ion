@@ -299,7 +299,7 @@ data class BalancingConfiguration(
 			volume = 15,
 			pitch = 1f,
 			soundName = "entity.warden.sonic_boom",
-			powerUsage = 8000,
+			powerUsage = 2500,
 			length = 4,
 			angleRadians = 15.0,
 			convergeDistance = 10.0,
