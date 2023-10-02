@@ -271,7 +271,7 @@ data class BalancingConfiguration(
 		val chaingun: StarshipWeapon = StarshipWeapon(
 			range = 180.0,
 			speed = 500.0,
-			shieldDamageMultiplier = 6,
+			shieldDamageMultiplier = 5,
 			thickness = 0.3,
 			particleThickness = .5,
 			explosionPower = 4.0f,
@@ -290,12 +290,12 @@ data class BalancingConfiguration(
 			maxPerShot = 2
 		),
 		val ioncannon: StarshipWeapon = StarshipWeapon(
-			range = 100.0,
+			range = 150.0,
 			speed = 20.0,
-			shieldDamageMultiplier = 5,
+			shieldDamageMultiplier = 6,
 			thickness = 0.5,
 			particleThickness = 1.0,
-			explosionPower = 8.0f,
+			explosionPower = 9.0f,
 			volume = 15,
 			pitch = 1f,
 			soundName = "entity.warden.sonic_boom",
@@ -332,10 +332,10 @@ data class BalancingConfiguration(
 		val pulseCannon: StarshipWeapon = StarshipWeapon(
 			range = 140.0,
 			speed = 170.0,
-			shieldDamageMultiplier = 1,
+			shieldDamageMultiplier = 2,
 			thickness = 0.2,
 			particleThickness = 0.4,
-			explosionPower = 2.0f,
+			explosionPower = 2.5f,
 			volume = 10,
 			pitch = 1.5f,
 			soundName = "entity.firework_rocket.blast_far",
