@@ -109,9 +109,9 @@ object Interdiction : IonServerComponent() {
 
 		val input = GravityWellMultiblock.getInput(sign)
 
-		if (LegacyItemUtils.getTotalItems(input, CustomItems.MINERAL_CHETHERITE.singleItem()) < 2) {
+		if (LegacyItemUtils.getTotalItems(input, CustomItems.MINERAL_CHETHERITE.singleItem()) < 1) {
 			player.userError(
-				"Not enough hypermatter in the dropper. Two chetherite shards are required!"
+				"Not enough hypermatter in the dropper. Chetherite shards are required!"
 			)
 			return
 		}
@@ -135,13 +135,13 @@ object Interdiction : IonServerComponent() {
 				continue
 			}
 
-			cruisingShip.cruiseData.velocity.multiply(0.8)
+			cruisingShip.cruiseData.velocity.multiply(0.7)
 			cruisingShip.onlinePassengers.forEach { passenger ->
-				passenger.alert("Quantum fluctuations detected - velocity has been reduced by 20%.")
+				passenger.alert("Quantum fluctuations detected - velocity has been reduced by 30%.")
 			}
 		}
 
-		input.removeItem(CustomItems.MINERAL_CHETHERITE.itemStack(2))
+		input.removeItem(CustomItems.MINERAL_CHETHERITE.itemStack(1))
 		starship.onlinePassengers.forEach { passenger ->
 			passenger.alert("Gravity pulse has been invoked by ${player.name}.")
 		}
