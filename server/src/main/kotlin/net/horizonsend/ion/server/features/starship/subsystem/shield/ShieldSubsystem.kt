@@ -22,7 +22,7 @@ abstract class ShieldSubsystem(
         get() = if (starship.shields.size > maxShields) {
             ((maxShields / starship.shields.size) * field).toInt()
         } else if (starship.initialBlockCount <= 1001) {
-            (field / 2)
+            (field / 1.5).toInt()
         } else if (starship.type.eventship) {
             (field * 2)
         } else {
